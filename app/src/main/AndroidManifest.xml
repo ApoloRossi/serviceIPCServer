@@ -19,11 +19,14 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".IPCServerService" android:exported="true">
+        <service
+            android:name=".IPCServerService" android:exported="true">
             <intent-filter>
-                <action android:name="aidlexample"/>
+                <action android:name="aidlexample" />
+                <action android:name="messengerexample" />
             </intent-filter>
         </service>
+
     </application>
 
 </manifest>
